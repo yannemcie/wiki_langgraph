@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "wiki-agent"
+version = "0.1.0"
+description = ""
+authors = ["yannemcie <yann@emcie.co>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+mypy = "^1.11.2"
+ruff = "^0.6.7"
+langchain = "^0.3.0"
+langchain-community = "^0.3.0"
+langchain-openai = "^0.2.0"
+tavily-python = "^0.5.0"
+langgraph = "^0.2.26"
+wikipedia-api = "^0.7.1"
+requests = "^2.32.3"
+wikipedia = "^1.4.0"
+ipython = "^8.27.0"
+graphviz = "^0.20.3"
+pydot = "^3.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
