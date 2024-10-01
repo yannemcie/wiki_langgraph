@@ -6,6 +6,7 @@ from langchain_community.retrievers import WikipediaRetriever
 from langchain_community.document_loaders import WikipediaLoader
 from langchain_community.utilities import WikipediaAPIWrapper
 from langchain_community.tools import WikipediaQueryRun
+from langchain_core.runnables.config import RunnableConfig
 ##langgraph
 from langgraph.graph.message import add_messages
 from langgraph.graph import StateGraph, START, END
@@ -75,7 +76,7 @@ If you can't generate a link of some kind like Zoom or Google meet, don't propos
 The idea is to lead the user to ask if he could leave you an email or phone to talk over.
 """
 
-config  = {"configurable": {"thread_id": "2"}}
+config  = RunnableConfig({"configurable": {"thread_id": "2"}})
 
 while True:
     user_input = input("User: ")
